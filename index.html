@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div#area{
+            font: normal 100pt arial;
+            background: rgb(209, 31, 177);
+            color: rgb(255, 254, 254);
+            width: 100%;
+            height:500px;
+            line-height: 200px;
+            text-align:center ;
+            justify-content: center;
+        }   
+    </style>
+</head>
+
+<body>
+    <div id="area" onclick= "to_click()" onmouseenter="go_out()" onmouseout="log_in()"> 
+        Por Vocês...
+    </div>
+
+    <script>
+        function to_click(){
+            var a = document.getElementById('area')
+            a.innerText = " Eu te amo!"
+            a.style.background = "red"
+            a.style.color = "yellow"
+            a.style.font = "normal 100pt gill Sans "
+
+        }
+         function log_in(){
+            var a = document.getElementById('area')
+             a.innerText = "Luka!"
+             a.style.background = "purple"
+             a.style.color = "orange"    
+        }   
+         function  go_out(){
+            var a = document.getElementById('area')
+            a.innerText = "Manu!"
+            a.style.background = "Khaki"
+            a.style.color = "Teal"  
+        }
+    </script>
+</body>
+</html>
